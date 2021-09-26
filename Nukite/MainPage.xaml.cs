@@ -46,9 +46,8 @@ namespace Nukite
 
         public MainPage()
         {
-            Debug.WriteLine("ANTES");
-            InitializeComponent();
-            Debug.WriteLine("Después");
+          
+            this.InitializeComponent();
 
             // Instance of Data Access class
             DataAccess dataAccess = new DataAccess();
@@ -443,8 +442,7 @@ namespace Nukite
 
         private void OnNewWindowRequested(CoreWebView2 sender, CoreWebView2NewWindowRequestedEventArgs args)
         {
-            Uri uri = new Uri(args.Uri);
-            AddNewTab(uri);
+            AddNewTab(new Uri(args.Uri));
             args.Handled = true;
         }
 
