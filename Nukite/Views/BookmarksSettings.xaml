@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="Nukite.Views.BookmarksSettings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Nukite"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Transparent"
+    RequestedTheme="Dark">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock
+                        Grid.Row="0"
+                        Text="MARCADORES"
+                        FontWeight="Bold"
+                        FontSize="20"
+                        HorizontalAlignment="Left"
+                        Padding="10"/>
+
+
+        <Rectangle Grid.Row="1" Height="1" Fill="{StaticResource SystemAccentColor}" VerticalAlignment="Top" />
+
+        <ListBox Grid.Row="2" x:Name="BookmarkList_Settings" Background="{x:Null}">
+
+        </ListBox>
+
+    </Grid>
+</Page>

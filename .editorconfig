@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CS8305: Este tipo se incluye solo con fines de evaluación y está sujeto a cambios o a que se elimine en próximas actualizaciones.
+dotnet_diagnostic.CS8305.severity = none
