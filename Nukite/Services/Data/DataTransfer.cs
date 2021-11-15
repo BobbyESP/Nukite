@@ -261,6 +261,10 @@ namespace Nukite.Services.Data
             favicon.InnerText = Favicon;
 
             SaveDoc(doc);
+            Console.WriteLine("Going to load...")
+            GetBookmarkList();
+            Console.WriteLine("Loaded! Lmao");
+
         }
 
         public async Task<List<BookmarkDetails>> GetBookmarkList()

@@ -16,8 +16,8 @@ namespace Nukite.Services.Data
         public async void CheckIfXMLExists()
         {
             #region "SHIT"
-            //var Settings = await ApplicationData.Current.LocalFolder.GetFileAsync("settings.xml");
-            /* StorageFile file = await ApplicationData.Current.LocalFolder.GetFileAsync(settingsFileName);
+            /*var Settings = await ApplicationData.Current.LocalFolder.GetFileAsync("settings.xml");
+             StorageFile file = await ApplicationData.Current.LocalFolder.GetFileAsync(settingsFileName);
              IBuffer buffer = await FileIO.ReadBufferAsync(file);
              string filePathString = Convert.ToBase64String(buffer.ToArray());
              if (File.Exists(filePathString))
@@ -64,6 +64,7 @@ namespace Nukite.Services.Data
 
                     using (XmlWriter w = XmlWriter.Create(s, settings))
                     {
+                        #region "RLly bad lol"
                        /* w.WriteStartDocument();
                         w.WriteStartElement("settings");
                         w.WriteStartElement("history");
@@ -93,6 +94,7 @@ namespace Nukite.Services.Data
                         w.WriteEndDocument();
                         w.Flush();
                         await w.FlushAsync();*/
+                        #endregion
                         w.WriteStartDocument();
                         w.WriteStartElement("settings");
                         w.WriteStartElement("history");
